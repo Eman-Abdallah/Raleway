@@ -1,0 +1,49 @@
+#work {
+    .nav {
+        flex-wrap: nowrap;
+    }
+    .nav-link {
+        border: none;
+        background-color: #fff;
+        color: gray;
+        &.active {
+            color: black;
+        }
+    }
+    .card {
+        position: relative;
+        padding: 0;
+        margin: 0 !important;
+        overflow: hidden;
+        cursor: pointer;
+        align-self: center;
+        &:hover .card-content {
+            bottom: 0px;
+        }
+    }
+    .card {
+        border: none!important;
+        border-radius: 0;
+    }
+    .card-content {
+        position: absolute;
+        bottom: -300px;
+        padding-top: 100px;
+        color: black;
+        background: rgba(255, 255, 255, 0.8);
+        height: 100%;
+        width: 100%;
+        transition: bottom .4s ease-in;
+        h4,
+        span {
+            color: $primary;
+            font-size: 2.1rem;
+            text-align: center;
+            font-weight: 500;
+        }
+        span {
+            font-size: 1.1rem;
+            color: black;
+        }
+    }
+}

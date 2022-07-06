@@ -1,0 +1,153 @@
+$primary:#2a80b9;
+@import"./node_modules/bootstrap/scss/bootstrap.scss";
+// header
+@font-face {
+    font-family: "raleway";
+    scr: url(./assets/fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@import'./themes/scss/_header';
+@import'./themes/scss/_about';
+@import'./themes/scss/_process';
+@import'./themes/scss/_work';
+@import'./themes/scss/_clients';
+@import'./themes/scss/_pricing';
+@import'./themes/scss/_contact';
+@import'./themes/scss/_footer';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'raleway';
+}
+
+section {
+    margin-top: 100px!important;
+}
+
+@media (max-width: 992px) {
+    #work {
+        .card-content {
+            padding-top: 70px;
+            h4,
+            span {
+                color: $primary;
+                font-size: 1.6rem;
+                text-align: center;
+                font-weight: 500;
+            }
+            span {
+                font-size: 1rem;
+                color: black;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        .navbar-collapse ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    #clients {
+        .swiper {
+            margin-left: 10px;
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width:578px) {
+    nav {
+        .container-fluid {
+            padding-left: 0;
+        }
+        .navbar-collapse ul a {
+            font-size: 10px;
+        }
+    }
+    #about {
+        .counter {
+            .col-sm-3 {
+                border-left: none;
+                border-bottom: 1px dotted rgb(214, 213, 213);
+                &.no {
+                    border: none;
+                }
+            }
+        }
+        .teams {
+            img {
+                width: 238px;
+            }
+        }
+    }
+    .cards {
+        margin: 10px!important;
+        padding: 10px!important;
+    }
+    .card {
+        i {
+            font-size: 1em;
+            padding: 7px;
+            margin-bottom: 4px;
+        }
+        h5 {
+            font-weight: bold;
+            font-size: 16px!important;
+            margin-bottom: 4px;
+        }
+        p {
+            font-size: 10px;
+        }
+    }
+    #home {
+        .content {
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 0.8em;
+            }
+        }
+    }
+    #work {
+        .nav-link {
+            font-size: .7em;
+            padding: 10px 5px;
+        }
+    }
+    #Process {
+        h4 {
+            font-size: 20px!important;
+        }
+        p {
+            font-size: 10px;
+        }
+    }
+    #clients {
+        .swiper-slide {
+            padding: 10px;
+            i {
+                font-size: 30px!important;
+            }
+            p {
+                font-size: 10px;
+            }
+            h6 {
+                font-size: 14px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+    #contact {
+        .info {
+            margin: 10px!important;
+            padding: 10px!important;
+            justify-content: flex-start!important;
+            align-items: flex-start;
+        }
+    }
+}

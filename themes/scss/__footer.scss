@@ -1,0 +1,61 @@
+footer {
+    a {
+        padding: 10px;
+        border: 1px solid rgb(156, 156, 156);
+        border-radius: 50%;
+        margin-left: 10px;
+        color: #000;
+    }
+    .facebook {
+        a {
+            padding: 9px 13px;
+            &:hover {
+                background-color: #337ab7;
+                color: white;
+            }
+        }
+    }
+    .twitter {
+        a:hover {
+            background-color: #47a9ff;
+            color: white;
+        }
+    }
+    .google,
+    .youtube {
+        a {
+            padding: 9px 8px;
+            &:hover {
+                background-color: rgb(255, 50, 50);
+                color: white;
+            }
+        }
+    }
+    .linkidin {
+        a {
+            padding: 9px 13px;
+            &:hover {
+                background-color: #1878cd;
+                color: white;
+            }
+        }
+    }
+    .youtube {
+        a {
+            padding: 10px 11px;
+            &:hover {
+                background-color: rgb(255, 50, 50);
+                color: white;
+            }
+        }
+    }
+    .skype {
+        a {
+            padding: 9px 13px;
+            &:hover {
+                background-color: #42a5fc;
+                color: white;
+            }
+        }
+    }
+}

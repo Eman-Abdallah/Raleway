@@ -1,0 +1,38 @@
+#contact {
+    form {
+        input,
+        textarea {
+            background: #f7f7f7;
+        }
+        button {
+            display: flex;
+            border: 2px solid #f7f7f7;
+            align-self: flex-start;
+            padding: 10px 20px;
+            &:hover {
+                background-color: $primary;
+                color: white;
+                border: none;
+            }
+        }
+    }
+    .d-flex {
+        margin-bottom: 10px;
+        align-items: center;
+        gap: 10px;
+        text-align: start;
+        i {
+            background-color: $primary;
+            color: white;
+            padding: 30px 20px;
+            padding-right: 20px!important;
+            border-radius: 50%;
+        }
+        h5 {
+            font-weight: 500;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}

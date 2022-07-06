@@ -1,0 +1,112 @@
+$primary:#2a80b9;
+nav {
+    text-transform: uppercase;
+    font-weight: bold;
+    .navbar-brand {
+        font-size: 2em;
+        color: #fff;
+    }
+    .navbar-toggler {
+        background-color: white;
+        i {
+            color: $primary;
+        }
+    }
+    button:hover {
+        background-color: $primary;
+        i {
+            color: white;
+        }
+        border: none;
+    }
+    .nav-item {
+        margin-left: 0.4em;
+        .nav-link {
+            padding: 0;
+        }
+        a {
+            color: #fff;
+            font-size: 14px;
+            &.active {
+                color: $primary;
+            }
+        }
+    }
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.7);
+}
+
+.scrolled {
+    background: rgba(0, 0, 0, 0.9)!important;
+}
+
+.swiper {
+    width: 100%;
+    height: 600px;
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        z-index: 5;
+        width: 100%;
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 9, 75, 0.2);
+            z-index: -1000;
+        }
+    }
+    .slide1 {
+        background-image: url(../../assets/img/slider1.jpg);
+        width: 100%;
+    }
+    .slide2 {
+        background-image: url(../../assets/img/slider2.jpg);
+    }
+    .slide3 {
+        background-image: url(../../assets/img/slider3.jpg);
+    }
+    .content {
+        margin-top: 10em;
+        color: white;
+        z-index: 3;
+        h1,
+        p,
+        a {
+            margin: 20px;
+        }
+        a {
+            padding: 10px 30px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 550;
+            background-color: #2a80b9;
+            color: white;
+            &:hover {
+                background: white;
+                color: #000;
+            }
+        }
+    }
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        padding: 40px 20px;
+        background: #000;
+        opacity: .5;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        background: #a3ccff;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,50 @@
+#pricing {
+    padding: 60px 0;
+    background: #f7f7f7;
+    .card {
+        margin-bottom: 20px;
+    }
+    .box {
+        padding: 10px;
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        h6,
+        p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        span {
+            color: rgb(106, 105, 105);
+        }
+    }
+    li {
+        padding: 15px 10px;
+        color: rgb(165, 165, 165);
+        font-weight: 500;
+    }
+    a {
+        border: 2px solid #f7f7f7;
+        padding: 5px 20px;
+        &:hover {
+            background-color: $primary;
+            color: white;
+        }
+    }
+    .special {
+        a {
+            color: white;
+        }
+        a:hover {
+            background-color: white;
+            color: $primary;
+        }
+    }
+    .card:hover {
+        transform: translateY(-15px);
+        transition: .4s ease-in;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+    }
+}

@@ -1,0 +1,52 @@
+#clients {
+    height: 400px;
+    padding: 20px;
+    padding-top: 100px;
+    background-image: url(../../assets/img/testimonials.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    .swiper {
+        margin-left: 100px;
+        height: 280px;
+    }
+}
+
+.swiper-slide {
+    .container {
+        background-color: white;
+        opacity: .8;
+        border-radius: 20px;
+        padding: 20px;
+        i {
+            color: $primary;
+            font-size: 50px;
+        }
+        p {
+            font-size: 14px;
+            color: rgb(106, 105, 105);
+            font-weight: 700;
+        }
+        h6 {
+            font-size: 20px;
+        }
+    }
+}
+
+.test {
+    background-color: $primary;
+    height: 200px;
+    padding-top: 70px;
+    .swiper,
+    .swiper-wrapper {
+        height: 200px;
+    }
+    .swiper-slide {
+        display: flex;
+        height: 200px;
+        a {
+            width: 240px;
+            height: 50px;
+        }
+    }
+}
